@@ -20,10 +20,11 @@ public class Product {
 	public String toString() {
 		return name
 			+ ", $ "
-			+ price
+			+ String.format("%.2f", price)
 			+ ", "
 			+ quantity
-			+ "units, Total : $ "
+			+ " units, Total : $ "
+			+ String.format("%.2f", totalValueInStock());
 			
 			
 	}
